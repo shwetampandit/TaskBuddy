@@ -15,16 +15,16 @@ const AuthRoute: React.FunctionComponent<IAuthRouteProps> = (props) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
-                console.log('authorized')
+                // console.log('authorized')
                 setLoading(false);
-                console.log('user', user)
-                console.log('auth', auth)
+                // console.log('user', user)
+                // console.log('auth', auth)
             } else {
-                console.log('unauthorized');
+                // console.log('unauthorized');
                 setLoading(false);
                 navigate('/login')
-                console.log('user', user)
-                console.log('auth', auth)
+                // console.log('user', user)
+                // console.log('auth', auth)
             }
         });
         return () => unsubscribe();

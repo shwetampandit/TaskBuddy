@@ -1,0 +1,16 @@
+.MuiAccordion-root {
+  border-radius: 12px !important;
+  .MuiAccordion-heading {
+    background-color: aqua !important;
+  }
+  .MuiButtonBase-root.MuiAccordionSummary-root.Mui-expanded {
+    min-height: 40px !important;
+  }
+}
+.MuiAccordionSummary-content {
+  margin: 0 8px !important;
+}
+.MuiAccordionDetails-root {
+  padding: 0 !important;
+  background-color: rgba(241, 241, 241, 1);
+}
